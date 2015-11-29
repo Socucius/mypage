@@ -3,12 +3,13 @@ var app = express();
 app.set('view engine', 'jade');
 app.use(express.static('styles'));
 app.use(express.static('images'));
+app.set('port', (process.env.PORT || 300));
+
 
 app.get('/*', function(req, res) {
   res.render('index',{ title: 'Hey', message: 'Hello there!'});
 })
 
-var server = app.listen(3000, function(){
-  var host = server.address().address;
-  var posrt = server.address().port;
-})
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
