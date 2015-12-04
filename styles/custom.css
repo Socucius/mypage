@@ -10,13 +10,15 @@ img {
 }
 
 #main {
-  padding: 5% 0;
-  min-width: 100px;
-  width: 100%;
+  width: 500px;
+  margin: 0 auto;
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
 }
 
 #info {
-  padding: 10% 0;
   text-align: center;
   text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
