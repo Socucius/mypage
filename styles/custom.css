@@ -18,7 +18,9 @@ img {
 #info {
   padding: 10% 0;
   text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
+
 
 #name {
   font-family: times, Times New Roman, times-roman, georgia, serif;
@@ -29,6 +31,8 @@ img {
   line-height: 44px;
   letter-spacing: -2px;
   font-weight: 100;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
 
 #about {
@@ -37,4 +41,5 @@ img {
   line-height: 14px;
   letter-spacing: 2px;
   font-weight: 100;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
