@@ -29,7 +29,7 @@ html
        || navigator.userAgent.match(/BlackBerry/i)
        || navigator.userAgent.match(/Windows Phone/i)
        ){
-         console.log("No mobile device support");
+         $("#name").css("color", "black");
         } else {
           $.backstretch("bg.jpg", {speed: 150});
         }
