@@ -9,34 +9,7 @@ html
     script(type='text/javascript', src='/jquery.backstretch.min.js')
     script(type='text/javascript', src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js",integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS",crossorigin="anonymous")
     title Alexander Shagov
-  body
-    div(id="main", class="container")
-      div(id="info")
-        h3(id="name") Alexander Shagov
-        h4(id= "about") Webdev. Music. Mood.
-        a(href="https://www.linkedin.com/in/alexandershagov", class="hvr-bob")
-          img(src="linkedin.png")
-        a(href="https://twitter.com/socucius", class="hvr-bob")
-          img(src="twitter.png")
-        a(href="https://www.instagram.com/socucius/", class="hvr-bob")
-          img(src="instagram.png")
-        a(href="http://vk.com/id67776719", class="hvr-bob")
-          img(src="vk.png")
-
-    script(type='text/javascript').
-      //- if( navigator.userAgent.match(/Android/i)
-      //-  || navigator.userAgent.match(/webOS/i)
-      //-  || navigator.userAgent.match(/iPhone/i)
-      //-  || navigator.userAgent.match(/iPad/i)
-      //-  || navigator.userAgent.match(/iPod/i)
-      //-  || navigator.userAgent.match(/BlackBerry/i)
-      //-  || navigator.userAgent.match(/Windows Phone/i)
-      //-  ){
-      //-    $("#name").css("color", "black");
-      //-   } else {
-      $.backstretch("bg.jpg", {speed: 150});
-        //- }
-
+  
     // Yandex.Metrika counter
     script(type='text/javascript').
       (function (d, w, c) {
@@ -60,7 +33,24 @@ html
       d.addEventListener("DOMContentLoaded", f, false);
       } else { f(); }
       })(document, window, "yandex_metrika_callbacks");
+    
+  body
+    div(id="main", class="container")
+      div(id="info")
+        h3(id="name") Alexander Shagov
+        h4(id= "about") Webdev. Music. Mood.
+        a(href="https://www.linkedin.com/in/alexandershagov", class="hvr-bob")
+          img(src="linkedin.png")
+        a(href="https://twitter.com/socucius", class="hvr-bob")
+          img(src="twitter.png")
+        a(href="https://www.instagram.com/socucius/", class="hvr-bob")
+          img(src="instagram.png")
+        a(href="http://vk.com/id67776719", class="hvr-bob")
+          img(src="vk.png")
+
+    script(type='text/javascript').
+      $.backstretch("bg.jpg", {speed: 150});
+
     noscript
       div
         img(src='https://mc.yandex.ru/watch/34638270', style='position:absolute; left:-9999px;', alt='')
-    // /Yandex.Metrika counter
