@@ -3,17 +3,21 @@ html
   head
     link(type='text/css', rel='stylesheet', href='custom.css')
     link(type='text/css', rel='stylesheet', href='hover-min.css')
+    link(tyoe='text/css', rel='stylesheet', href='https://cdn.rawgit.com/jgthms/bulma/master/css/bulma.min.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='Personal Website')
     script(type='text/javascript', src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
     script(type='text/javascript', src='/jquery.backstretch.min.js')
-    script(type='text/javascript', src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js",integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS",crossorigin="anonymous")
     title Alexander Shagov
   body
-    div(id="main", class="container")
-      div(id="info")
-        h3(id="name") Alexander Shagov
-        h4(id= "about") Webdev. Music. Mood.
+  
+  section.hero.is-success.is-fullheight
+    .hero-content
+      .container
+        h1.title
+          | Alexander Shagov
+        h2.subtitle
+          | Webdev. Music. Mood.
         a(href="https://www.linkedin.com/in/alexandershagov", class="hvr-bob")
           img(src="linkedin.png")
         a(href="https://twitter.com/socucius", class="hvr-bob")
@@ -34,7 +38,7 @@ html
       //-  ){
       //-    $("#name").css("color", "black");
       //-   } else {
-      $.backstretch("bg.jpg", {speed: 150});
+      $('.hero').backstretch("background.png", {speed: 150});
         //- }
 
     // Yandex.Metrika counter
