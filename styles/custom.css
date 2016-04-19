@@ -1,11 +1,33 @@
-html, body {
+html, body, .container-table {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-size: 2em;
+  color: white;
+}
+
+.container-table {
+  text-align: center;
+  display: table;
+}
+.vertical-center-row {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 img {
   height: 50px;
   width: 50px;
+}
+
+.title {
+  text-shadow: 1px 1px 1px grey;
+}
+
+.subtitle {
+  margin-top: -5px;
+  color: #e6e6e6;
+  font-size: 0.6em;
 }
 
 .container img {

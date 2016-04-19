@@ -3,7 +3,7 @@ html
   head
     link(type='text/css', rel='stylesheet', href='custom.css')
     link(type='text/css', rel='stylesheet', href='hover-min.css')
-    link(tyoe='text/css', rel='stylesheet', href='https://cdn.rawgit.com/jgthms/bulma/master/css/bulma.min.css')
+    link(tyoe='text/css', rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='Personal Website')
     script(type='text/javascript', src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
@@ -11,24 +11,23 @@ html
     title Alexander Shagov
   body
   
-  section.hero.is-success.is-fullheight
-    .hero-content
-      .container
-        h1.title
-          | Alexander Shagov
-        h2.subtitle
-          | Webdev. Music. Mood.
-        a(href="https://www.linkedin.com/in/alexandershagov", class="hvr-bob")
-          img(src="linkedin.png")
-        a(href="https://twitter.com/socucius", class="hvr-bob")
-          img(src="twitter.png")
-        a(href="https://www.instagram.com/socucius/", class="hvr-bob")
-          img(src="instagram.png")
-        a(href="http://vk.com/id67776719", class="hvr-bob")
-          img(src="vk.png")
+  .container.container-table
+    .row.vertical-center-row
+      h1.title
+        | Alexander Shagov
+      h2.subtitle
+        | Webdev. Music. Mood.
+      a(href="https://www.linkedin.com/in/alexandershagov", class="hvr-bob")
+        img(src="linkedin.png")
+      a(href="https://twitter.com/socucius", class="hvr-bob")
+        img(src="twitter.png")
+      a(href="https://www.instagram.com/socucius/", class="hvr-bob")
+        img(src="instagram.png")
+      a(href="http://vk.com/id67776719", class="hvr-bob")
+        img(src="vk.png")
 
     script(type='text/javascript').
-      $('.hero').backstretch("background.png", {speed: 150});
+      $('body').backstretch("background.png", {speed: 150});
   
     // Yandex.Metrika counter
     script(type='text/javascript').
